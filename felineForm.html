@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>
+            Feline Form
+        </title>
+        <meta charset="UTF-8">
+        <meta name="autor" content="Enrico">
+        <meta name="topic" content="Cat survey form">
+        <link rel="icon" href="/img/smiling-cat-face-with-heart-shaped-eyes-emoji-256x256-1krew6xw.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Cute pictures of cats</h1>
+            <nav aria-label="Primmary navigation">
+                <ul id="menuList">
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#catFacts">Cat Facts</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+        </header>        
+        <main>
+            <article id="form">
+                <h2>Feline Form</h2>
+                <p>Answer this survey and help us to understand more about these beautiful animals</p>
+                <p>OBS: If you want, can atach a picture of your cat to be part of our gallery</p>
+                <form action="https://freecatphotoapp.com/submit-cat-photo"></form>
+                <fieldset>
+                    <legend>Information about your cat</legend>
+                    <p>
+                        <label for="catName">What is your cat's name?</label>
+                        <input type="text" name="catName" id="catName" placeholder="Ex: Garfield" autocomplete="on" required autofocus>
+                    </p> 
+                    <p>
+                        <label for="catNumber">How many cats do you have?</label>
+                        <input type="number" name="catNumber" id="catNumber" min="1" max="30" step="1" value="1" required>
+                    </p>
+                    <p>Is your cat an indoor or outdoor cat?</p>
+                    <p>
+                        <input type="radio" name="indoor-outdoor" id="indoor" value="indoor">
+                        <label for="indoor">Indoor</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="indoor-outdoor" id="outdoor" value="outdoor">
+                        <label for="outdoor">Outdoor</label>
+                    </p>
+                    <p>What is your cat personality?</p>
+                    <p>
+                        <input type="checkbox" name="personality" id="sly">
+                        <label for="sly">Sly</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="personality" id="lazy">
+                        <label for="lazy">Lazy</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="personality" id="hyperactive">
+                        <label for="hyperactive">Hyperactive</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="personality" id="suspicious">
+                        <label for="suspicious">Suspicious</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Your cat in our gallery</legend>
+                    <p>Attach a picture for our team to add to the gallery</p>
+                    <input type="file" name="picFile" id="picFile">
+                    <p>
+                        <label for="message">Picture caption</label>
+                    </p>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Insert the picture caption here"></textarea>
+                 </fieldset>
+                 <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </article>
+            <hr>
+            <p><a href="/felineForm.html">Go back to top</a></p>
+        </main>
+        <footer>
+            <p>
+                &lt; &copy; Copyright App My Cute Kitten &gt;
+            </p>
+        </footer>
+    </body>
+</html>
